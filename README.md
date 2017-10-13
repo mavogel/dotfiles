@@ -25,6 +25,7 @@ Note this install is for a new machine.
 Install first:
 - VsCode (add it to `$PATH`)
 
+Run this in the `$HOME` directory
 ```
 curl https://cdn.rawgit.com/mavogel/dotfiles/master/install.sh | sh
 ```

@@ -42,10 +42,10 @@ packages=(
 "wget"
 )
 
-for i in "${packages[@]}"
+for p in "${packages[@]}"
 do
-  echo "-- $i"
-  brew install $i
+  echo "-- $p"
+  brew install $p
 done
 
 echo "---------------------------------------------------------"
@@ -97,6 +97,17 @@ sed -i.bak \
   .zshrc && rm -f .zshrc.bak
 
 echo "---------------------------------------------------------"
+echo "setting symlinks"
+# the symlinks should be with out a starting dot in ~/.dotfiles
+symlinks=(
+  gitconfig
+)
+for symlink in "${symlinks[@]}"
+do
+  ln -s ~/.dotfiles/${symlink} ~/.${symlink}
+done
+
+echo "---------------------------------------------------------"
 vscode=$(which code)
 if [ -f "$vscode" ]
 then
@@ -112,10 +123,10 @@ then
   "tht13.python"
   )
 
-  for i in "${vscode_extensions[@]}"
+  for ext in "${vscode_extensions[@]}"
   do
-    echo "-- $i"
-    code --install-extension $i
+    echo "-- $ext"
+    code --install-extension $ext
   done
 else
   echo "Visual Studio Code is not present hence no extension could be installed"
