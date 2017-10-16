@@ -23,7 +23,7 @@ fi
 echo "---------------------------------------------------------"
 echo "Installing brew packages..."
 packages=(
-"awscli",
+"awscli"
 "ffmpeg"
 "git"
 "go"
@@ -33,10 +33,12 @@ packages=(
 "jo"
 "maven"
 "neovim"
-"node",
-"packer",
+"node"
+"packer"
+"pandoc"
+"pandoc-citeproc"
 "python3"
-"openssl",
+"openssl"
 "ssh-copy-id"
 "terragrunt"
 "tflint"
