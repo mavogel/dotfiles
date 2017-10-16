@@ -29,6 +29,8 @@ packages=(
 "go"
 #"go-delve/delve/delve"
 "gradle"
+"jq"
+"jo"
 "maven"
 "neovim"
 "node",
