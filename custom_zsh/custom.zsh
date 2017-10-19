@@ -48,6 +48,10 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 export MAVEN_OPTS="-Xmx512m -XX:MaxPermSize=128m"
 export GOPATH=$HOME/Development/go
 
+# PATH
+PATH=$PATH:$GOPATH/bin
+
+
 #   Set default blocksize for ls, df, du
 #   from this: http://hints.macworld.com/comment.php?mode=view&cid=24491
 #   ------------------------------------------------------------
