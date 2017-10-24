@@ -27,6 +27,7 @@ packages=(
 "ffmpeg"
 "git"
 "go"
+"govendor"
 #"go-delve/delve/delve"
 "gradle"
 "jq"
