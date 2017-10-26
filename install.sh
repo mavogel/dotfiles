@@ -28,6 +28,7 @@ packages=(
 "git"
 "go"
 "govendor"
+"godep"
 #"go-delve/delve/delve"
 "gradle"
 "jq"
