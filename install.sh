@@ -41,6 +41,7 @@ packages=(
 "pandoc-citeproc"
 "python3"
 "openssl"
+"shellcheck"
 "ssh-copy-id"
 "terragrunt"
 "tflint"
@@ -127,6 +128,7 @@ then
   "mauve.terraform"
   "mindginative.terraform-snippets"
   "tht13.python"
+  "timonwong.shellcheck"
   )
 
   for ext in "${vscode_extensions[@]}"
