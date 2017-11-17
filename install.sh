@@ -45,6 +45,7 @@ packages=(
 "ssh-copy-id"
 "terragrunt"
 "tflint"
+"tree"
 "vim --with-override-system-vi --with-features=huge --without-nls --enable-interp=ruby,perl,python"
 "wget"
 )
