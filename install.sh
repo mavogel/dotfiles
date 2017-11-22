@@ -145,6 +145,9 @@ fi
 # echo "---------------------------------------------------------"
 # echo "Installing dev tools - need admin rights"
 # sudo su
+# sudo chmod -R 777 /Library/Ruby/Gems/2.3.0
+# gem install travis
+# sudo chmod -R 755 /Library/Ruby/Gems/2.3.0
 #exit # get out of sudo mode
 
 echo 'done'
