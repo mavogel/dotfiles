@@ -48,6 +48,7 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 export MAVEN_OPTS="-Xmx512m -XX:MaxPermSize=128m"
 export GOPATH=$HOME/Development/go
 export GOBIN=$GOPATH/bin
+export EDITOR=vim
 
 # PATH
 PATH=$PATH:$GOPATH/bin
