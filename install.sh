@@ -46,6 +46,7 @@ packages=(
 "terragrunt"
 "tflint"
 "tree"
+"tsub/s3-edit/s3-edit"
 "vim --with-override-system-vi --with-features=huge --without-nls --enable-interp=ruby,perl,python"
 "wget"
 )
