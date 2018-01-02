@@ -33,6 +33,7 @@ packages=(
 "gradle"
 "jq"
 "jo"
+"kubectl"
 "maven"
 "neovim"
 "node"
