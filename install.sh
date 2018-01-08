@@ -31,6 +31,7 @@ packages=(
 "godep"
 #"go-delve/delve/delve"
 "gradle"
+"grep"
 "jq"
 "jo"
 "kubectl"
