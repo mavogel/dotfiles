@@ -49,6 +49,7 @@ export MAVEN_OPTS="-Xmx512m -XX:MaxPermSize=128m"
 export GOPATH=$HOME/Development/go
 export GOBIN=$GOPATH/bin
 export EDITOR=vim
+export PYTHONPATH=$PYTHONPATH:/Library/Python/2.7/site-packages
 
 # PATH
 PATH=$PATH:$GOPATH/bin
