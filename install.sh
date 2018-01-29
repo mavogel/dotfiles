@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 echo "---------------------------------------------------------"
 echo "Installing ohmyzsh"
@@ -102,10 +102,14 @@ echo "proxyUser=''\n
 
 echo "---------------------------------------------------------"
 echo "adapting ~.zshrc"
-sed -i.bak \ 
-  -e 's#.*ZSH_CUSTOM.*#ZSH_CUSTOM=$HOME/.dotfiles/custom_zsh#' \ 
-  -e 's#.*ZSH_THEME.*#ZSH_THEME="geoffgarside"#' \ 
+sed -i.bak \
+  -e "s#.*ZSH_CUSTOM.*#ZSH_CUSTOM=$HOME/.dotfiles/custom_zsh#" \
+  -e 's#.*ZSH_THEME.*#ZSH_THEME="spaceship"#' \
   .zshrc && rm -f .zshrc.bak
+
+echo "installing 'spaceship' theme"
+git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
+ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 
 echo "---------------------------------------------------------"
 echo "setting symlinks"
@@ -124,15 +128,15 @@ if [ -f "$vscode" ]
 then
   echo "Installing vscode extensions"
   vscode_extensions=(
-  "PeterJausovec.vscode-docker"
-  "dbaeumer.vscode-eslint"
-  "donjayamanne.python"
-  "k--kato.intellij-idea-keybindings"
-  "lukehoban.Go"
-  "mauve.terraform"
-  "mindginative.terraform-snippets"
-  "tht13.python"
-  "timonwong.shellcheck"
+    "PeterJausovec.vscode-docker"
+    "dbaeumer.vscode-eslint"
+    "donjayamanne.python"
+    "k--kato.intellij-idea-keybindings"
+    "lukehoban.Go"
+    "mauve.terraform"
+    "mindginative.terraform-snippets"
+    "tht13.python"
+    "timonwong.shellcheck"
   )
 
   for ext in "${vscode_extensions[@]}"
@@ -144,7 +148,7 @@ else
   echo "Visual Studio Code is not present hence no extension could be installed"
 fi
 
- # [WIP]
+# [WIP]
 # echo "---------------------------------------------------------"
 # echo "Installing dev tools - need admin rights"
 # sudo su
