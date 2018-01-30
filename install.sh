@@ -24,6 +24,7 @@ echo "---------------------------------------------------------"
 echo "Installing brew packages..."
 packages=(
 "awscli"
+"cask install haskell-platform"
 "ffmpeg"
 "git"
 "go"
