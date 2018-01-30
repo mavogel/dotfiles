@@ -53,6 +53,7 @@ export PYTHONPATH=$PYTHONPATH:/Library/Python/2.7/site-packages
 
 # PATH
 PATH=$PATH:$GOPATH/bin
+PATH=$PATH:$HOME/.local/bin
 
 
 #   Set default blocksize for ls, df, du
