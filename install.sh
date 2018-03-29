@@ -23,6 +23,7 @@ fi
 echo "---------------------------------------------------------"
 echo "Installing brew packages..."
 packages=(
+"asciinema"
 "awscli"
 "cask install haskell-platform"
 "ffmpeg"
@@ -138,6 +139,7 @@ then
     "mindginative.terraform-snippets"
     "tht13.python"
     "timonwong.shellcheck"
+    "MS-DevSkim.vscode-devskim"
   )
 
   for ext in "${vscode_extensions[@]}"
