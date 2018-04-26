@@ -39,7 +39,7 @@ packages=(
 "kubectl"
 "maven"
 "neovim"
-"node"
+"node@8"
 "packer"
 "pandoc"
 "pandoc-citeproc"
