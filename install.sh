@@ -140,6 +140,7 @@ then
     "tht13.python"
     "timonwong.shellcheck"
     "MS-DevSkim.vscode-devskim"
+    "eamodio.gitlens"
   )
 
   for ext in "${vscode_extensions[@]}"
